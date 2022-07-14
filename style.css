@@ -16,6 +16,7 @@ header {
 .header-logo {
   width: 200px;
   padding-left: 5vw;
+  margin-top: 2em;
 }
 
 body {
