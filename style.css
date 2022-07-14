@@ -85,6 +85,7 @@ main {
   color: var(--Violet);
   font-size: 1rem;
   box-shadow: 10px 10px 25px -9px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
 }
 
 .register-btn:hover {
