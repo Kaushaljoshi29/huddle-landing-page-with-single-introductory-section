@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+}
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+header {
+  margin-bottom: 1.5em;
+}
+
+.header-logo {
+  width: 200px;
+  padding-left: 5vw;
+}
+
+body {
+  background: var(--Violet) url("./images/bg-desktop.svg");
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0;
+  margin-bottom: 2em;
+}
+
+.conatiner-image {
+  text-align: center;
+  width: 60%;
+}
+
+.illustration-image {
+  width: 80%;
+}
+
+.conatainer-text {
+  margin-left: -2em;
+  margin-top: 2em;
+  width: 35%;
+}
+
+.text-content-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5em;
+  transition: font-size 0.2s;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .text-content-heading {
+    font-size: 1.8rem;
+    transition: font-size 0.2s;
+  }
+}
+
+.text-content-paragraph {
+  color: white;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  line-height: 1.6em;
+  transition: font-size 0.2s;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .text-content-paragraph {
+    font-size: 0.9rem;
+    transition: font-size 0.2s;
+  }
+}
+
+.register-btn {
+  padding: 0.8em 3.5em;
+  border: none;
+  border-radius: 5em;
+  color: var(--Violet);
+  font-size: 1rem;
+  box-shadow: 10px 10px 25px -9px rgba(0, 0, 0, 0.75);
+}
+
+.register-btn:hover {
+  cursor: pointer;
+  background-color: var(--Soft-Magenta);
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+@media (min-width: 600px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+}
+
+.fa-brands {
+  color: #fff;
+  font-size: 0.8rem;
+  border: 1px solid #fff;
+  padding: 1em;
+  border-radius: 50%;
+}
+
+.fa-facebook-f {
+  padding: 1em 1.2em 0 1.2em;
+}
+
+.fa-facebook-f:hover {
+  padding: 1em 1.2em 0 1.2em;
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+  color: var(--Soft-Magenta);
+  border: 1px solid var(--Soft-Magenta);
+}
+
+.fa-instagram {
+  margin-right: 5em;
+}
+
+/*Mobile layout*/
+
+@media (max-width: 599px) {
+  .header-logo {
+    width: 150px;
+    /* padding-left: 5vw; */
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .conatiner-image {
+    text-align: center;
+    width: 100%;
+  }
+  .conatainer-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content-heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .text-content-paragraph {
+    font-size: 0.9rem;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 2em;
+    justify-content: center;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+  }
+  .fa-instagram {
+    margin-right: 0;
+  }
+  .fa-brands {
+    font-size: 0.5rem;
+  }
+}
