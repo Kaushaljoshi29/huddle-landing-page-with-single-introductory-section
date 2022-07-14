@@ -35,7 +35,7 @@ main {
 
 .conatiner-image {
   text-align: center;
-  width: 50%;
+  width: 60%;
 }
 
 .illustration-image {
@@ -43,10 +43,9 @@ main {
 }
 
 .conatainer-text {
-  /* margin-left: -2em; */
   margin-top: 2em;
-  width: 50%;
-  padding-right: 8em;
+  width: 40%;
+  padding-right: 6em;
 }
 
 .text-content-heading {
